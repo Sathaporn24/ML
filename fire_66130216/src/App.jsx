@@ -26,7 +26,7 @@ const App = () => {
   const initWebcam = async () => {
     if (model) {
       const flip = true; // Flip webcam for mirror effect
-      const webcam = new tmImage.Webcam(900, 900, flip);
+      const webcam = new tmImage.Webcam(1176, 664, flip);
       await webcam.setup(); // Request webcam access
       await webcam.play();
       webcamRef.current = webcam;
