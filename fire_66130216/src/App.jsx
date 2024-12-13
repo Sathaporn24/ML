@@ -57,7 +57,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Fire & Smoke</h1>
+      <h1>Fire & Smoke 2024</h1>
       <button onClick={initWebcam}>Start</button>
       <div id="webcam-container" className="webcam-container" ref={webcamRef} />
       <div id="label-container" className="label-container" ref={labelContainerRef}>
