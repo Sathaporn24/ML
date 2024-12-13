@@ -26,7 +26,7 @@ const App = () => {
   const initWebcam = async () => {
     if (model) {
       const flip = true; // Flip webcam for mirror effect
-      const webcam = new tmImage.Webcam(1176, 664, flip);
+      const webcam = new tmImage.Webcam(1000, 600, flip);
       await webcam.setup(); // Request webcam access
       await webcam.play();
       webcamRef.current = webcam;
@@ -57,7 +57,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Fire & Smoke 2024</h1>
+      <h1>Classification Fire & Smoke</h1>
       <button onClick={initWebcam}>Start</button>
       <div id="webcam-container" className="webcam-container" ref={webcamRef} />
       <div id="label-container" className="label-container" ref={labelContainerRef}>
